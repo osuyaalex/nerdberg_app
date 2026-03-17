@@ -8,10 +8,10 @@ extension SizesExt on num{
   double get pW => ScreenUtil().screenWidth * this / 100;
   //double get pH => ScreenUtil().screenHeight * this / 100;
   double get pH => ScreenUtil.defaultSize.height * this / 100;
-  Expanded get flex => Expanded(flex: this.toInt(), child: Container(),);
+  Expanded get flex => Expanded(flex: toInt(), child: Container(),);
 }
-extension spaces on num{
-  SizedBox get gap => SizedBox.square(dimension: this.h.pH);
+extension Spaces on num{
+  SizedBox get gap => SizedBox.square(dimension: h.pH);
 }
 
 double totalAppHeight(BuildContext context){

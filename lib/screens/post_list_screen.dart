@@ -91,8 +91,8 @@ class PostListScreen extends StatelessWidget {
                           Navigator.push(
                             context,
                             PageRouteBuilder(
-                              pageBuilder: (_, __, ___) => const FavoritesScreen(),
-                              transitionsBuilder: (_, anim, __, child) {
+                              pageBuilder: (_, a, b) => const FavoritesScreen(),
+                              transitionsBuilder: (_, anim, a2, child) {
                                 return FadeTransition(opacity: anim, child: child);
                               },
                             ),
